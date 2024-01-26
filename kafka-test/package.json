@@ -1,0 +1,27 @@
+{
+  "name": "kafka-test",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "cy:test": "cypress run --config video=false --env allure=true",
+    "cy:open": "cypress open",
+    "cy:dash": "npx cypress run --record --key {secrets_dash}",
+    "allure:report": "allure generate --clean allure-results && allure open"
+  },
+  "keywords": [
+    "cypress",
+    "tests",
+    "kafkaJs",
+    "KafkaNode",
+    "github-actions"
+  ],
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.1",
+    "cypress": "^13.6.2",
+    "cypress-wait-until": "^1.7.2",
+    "kafka-node": "5.0.0",
+    "kafkajs": "2.2.0"
+  }
+}

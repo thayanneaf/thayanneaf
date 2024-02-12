@@ -54,7 +54,7 @@ Estrutura do projeto:
 # Passos para executar o projeto
 
 | Comando                | Descrição                                   |
-| -------------------------------------------------------------------- |
+| ---------------------- | ------------------------------------------- |
 | npm i                  | Instala as dependências                     |
 | npm run cy:open        | Abre o Cypress                              |
 | npm run cy:test        | Executar os testes do Cypress               |
@@ -63,12 +63,10 @@ Estrutura do projeto:
 
 # Passos para inicar o Docker
 
-- Iniciar o Docker/Kafka
+## Iniciar o Docker/Kafka
 docker-compose up -d
-
-- Criar Tópicos
+## Criar Tópicos
 docker exec -it kafka /bin/bash
 kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic cypress
-
-- Encerrar o Docker/Kafka
+## Encerrar o Docker/Kafka
 docker-compose down

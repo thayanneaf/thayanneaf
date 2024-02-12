@@ -23,6 +23,8 @@ lerna-debug.log*
 # Optional npm cache directory
 .npm
 
+.DS_Store
+
 # Allure
 allure-results/*
 allure-results

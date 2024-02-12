@@ -1,0 +1,1 @@
+[{"uid":"6b8197e41cbe2ac8","name":"Teste de exemplo de um PRODUCER kafka","time":{"start":1707614869331,"stop":1707614869440,"duration":109},"status":"passed","severity":"normal"},{"uid":"dfde869cea840845","name":"Teste de exemplo de um CONSUMER kafka","time":{"start":1707614869442,"stop":1707614869485,"duration":43},"status":"passed","severity":"normal"}]

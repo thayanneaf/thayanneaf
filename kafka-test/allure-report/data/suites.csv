@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Feb 10 22:27:49 BRT 2024","Sat Feb 10 22:27:49 BRT 2024","109","","Exemplo de teste com kafka producer e consumer","","","","Teste de exemplo de um PRODUCER kafka",""
+"passed","Sat Feb 10 22:27:49 BRT 2024","Sat Feb 10 22:27:49 BRT 2024","43","","Exemplo de teste com kafka producer e consumer","","","","Teste de exemplo de um CONSUMER kafka",""

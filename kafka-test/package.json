@@ -5,10 +5,11 @@
     "node": ">=14.0.0"
   },
   "scripts": {
-    "cy:test": "cypress run --config video=false --env allure=true",
+    "cy:test": "cypress run",
     "cy:open": "cypress open",
     "cy:dash": "npx cypress run --record --key {secrets_dash}",
-    "allure:report": "allure generate --clean allure-results && allure open"
+    "allure:report": "allure generate --clean ./cypress/support/reports/allure/allure-results && allure open",
+    "cy:test:report": "npm run cy:test && npm run allure:report"
   },
   "keywords": [
     "cypress",
@@ -19,9 +20,12 @@
   ],
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.40.1",
-    "cypress": "^13.6.2",
+    "cypress": "12.14.0",
     "cypress-wait-until": "^1.7.2",
     "kafka-node": "5.0.0",
     "kafkajs": "2.2.0"
+  },
+  "dependencies": {
+    "allure-commandline": "^2.27.0"
   }
 }

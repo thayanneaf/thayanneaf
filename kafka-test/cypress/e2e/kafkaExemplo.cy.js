@@ -1,6 +1,4 @@
 import * as all from "../fixtures/kafkaExemplo";
-import date from "../support/helpers/dateHelpers.js"
-const stringify = require("json-stringify-safe");
 
 context("Exemplo de teste com kafka producer e consumer", () => {
 
@@ -22,7 +20,7 @@ context("Exemplo de teste com kafka producer e consumer", () => {
     cy.criarConsumerKafka_Node(partitionQty, topic, ip_broker, offset).then((response) => {
       cy.writeFile(kafkaMenssages, response)
       const msg = (response[0].message).replace(/"/g, '')
-      expect(msg).to.equal("Mensagem de exemplo")
+      expect(msg).to.equal("Teste Automatizado do Cypress com o Kafka")
     })
   });
 

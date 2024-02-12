@@ -8,6 +8,9 @@ cypress/screenshots/*
 cypress/videos/*
 
 ### Node ###
+# dependencias
+**/node_modules
+
 # Logs
 logs
 *.log
@@ -16,8 +19,14 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
-node_modules/*
 
 # Optional npm cache directory
 .npm
 
+# Allure
+allure-results/*
+allure-results
+allure-report/*
+allure-report
+reports/*
+reports

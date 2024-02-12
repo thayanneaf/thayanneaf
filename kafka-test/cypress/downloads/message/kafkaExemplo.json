@@ -1,7 +1,7 @@
 [
   {
-    "message": "\"Mensagem de exemplo\"",
-    "offset": 30,
+    "message": "\"Teste Automatizado do Cypress com o Kafka\"",
+    "offset": 26,
     "partition": 0,
     "key": "1"
   }
